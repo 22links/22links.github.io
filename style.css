@@ -1,0 +1,130 @@
+
+
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x:hidden;
+}
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url(HELVETICANEUEBOLD_0.woff) format('woff');
+}
+
+.myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-1;
+}
+
+div.titlecontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.herotitle {
+    font-family: 'HelveticaBold';
+    font-size:clamp(60px,10vw,250px);
+    line-height:1;
+    color:white;
+    position:relative;
+    z-index:1;
+    text-align:center;
+    white-space:nowrap;
+
+}
+
+div.sectiontitlecontainer{
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+}
+
+div.sectiontitlecontainer::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:white;
+
+    mix-blend-mode:overlay;
+
+    z-index:0;
+}
+
+div.sectiontitle{
+    font-family:'HelveticaBold';
+    font-size:clamp(40px,5vw,60px);
+
+    color:rgb(255, 255, 255);
+
+    position:relative;
+    z-index:1;
+}
+
+
+div.marqueetext {
+    flex: 0 0 auto;
+    font-family: 'HelveticaBold';
+    font-size:20px;
+    color:white;
+    position:relative;
+    z-index:1;
+    white-space:nowrap;
+    margin-right: 25px;
+    text-align: center;
+    align-content: center;
+}
+
+div.carousel {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+div.group {
+    display: flex;
+    animation: spin 30s infinite linear;
+}
+
+div.group2 {
+    display: flex;
+    animation: spin2 30s infinite linear;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+@keyframes spin2 {
+    from {translate: -100%;}
+    to {translate: 0%;}
+}
+
+div.width100 {
+    width:100%;
+}
+
+div.width30 {
+    width:30%;
+}
+
+div.sectiontitletext{
+    margin-left:auto;
+    margin-right:20px;
+}
+
+div.sectiontitlenum{
+    margin-right:auto;
+    margin-left:20px;
+}
