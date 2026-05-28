@@ -38,12 +38,12 @@ div.titlecontainer {
     border-left: 1px solid red;
     border-right: 1px solid red;
     box-sizing:border-box;
-    height: 90vh;
+    height: 91.3vh;
 }
 
 div.herotitle {
     font-family: 'HelveticaBold';
-    font-size:7vw;
+    font-size:10vw;
     line-height:1;
     color:white;
     position:relative;
@@ -98,6 +98,7 @@ div.marqueetext {
 div.carousel {
     display: flex;
     width: 100%;
+    height: 4vh;
     border-top: 1px solid red;
     border-bottom: 1px solid red;
     overflow-x: auto;
@@ -169,9 +170,12 @@ img.shopimgs {
     border: 1px solid red;
     display:block;
     position: sticky;
-    top:3.23vw;
+    top:3.35vw;
 }
 
+img.smaller {
+    transform:scale(0.5);
+}
 
 div.tester {
     background-color: blueviolet;
@@ -210,6 +214,13 @@ div.bodytext {
     text-indent:3em;
 }
 
+div.bodyquote {
+    font-family:'HelveticaBold';
+    font-size:2vw;
+    color:rgb(255, 255, 255);
+    text-align: justify;
+}
+
 div.captiontext {
     font-family:'HelveticaThin';
     font-size:1.1vw;
@@ -241,6 +252,18 @@ div.margintop100 {
 
 div.margintop60{
     margin-top: 60px;
+}
+
+div.margintop30{
+    margin-top: 30px;
+}
+
+div.marginbottom30{
+    margin-bottom: 30px;
+}
+
+div.paddingbottom30{
+    padding-bottom: 30px;
 }
 
 div.margintopminus10 {
